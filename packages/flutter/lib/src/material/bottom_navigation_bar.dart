@@ -934,10 +934,10 @@ class _BottomNavigationBarState extends State<BottomNavigationBar> with TickerPr
         colorTween = ColorTween(
           begin: widget.unselectedItemColor
             ?? bottomTheme.unselectedItemColor
-            ?? themeData.colorScheme.surface,
+            ?? themeData.unselectedWidgetColor,
           end: widget.selectedItemColor
             ?? bottomTheme.selectedItemColor
-            ?? themeData.colorScheme.surface,
+            ?? themeColor,
         );
         break;
     }
